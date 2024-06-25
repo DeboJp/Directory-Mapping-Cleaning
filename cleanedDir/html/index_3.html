@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spending Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Spending Dashboard</h1>
+        <div id="summary">
+            <div id="totalMoney">Total Money Ever: </div>
+            <div id="totalSpent">Total Money Spent: </div>
+            <div id="currentBalance">Current Balance: </div>
+            <div id="dailySpending">Today's Spending: </div>
+            <div id="weeklySpending">Weekly Spending: </div>
+        </div>
+        <div id="filters">
+            <select id="filterSelect">
+                <option value="all">All</option>
+                <option value="day">Day</option>
+                <option value="week">Week</option>
+                <option value="month">Month</option>
+                <option value="year">Year</option>
+            </select>
+        </div>
+        <canvas id="spendingChart"></canvas>
+        <canvas id="summaryChart"></canvas>
+        <div id="transactionList"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
